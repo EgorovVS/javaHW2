@@ -45,7 +45,7 @@ public class Task1 {
         for (int i = 0; i < length - 1; i++) {
             if (array[i] > array[i + 1]) {
                 swap(array, i, i + 1);
-                lg.log(Level.INFO,arrayToString(array)+"\n");
+                lg.log(Level.INFO,arrayToString(array)+"\n ");
                 if (length - 1 > 1) bubbleSort(array, length - 1, lg);
             }
         }
