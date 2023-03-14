@@ -12,7 +12,7 @@ import java.util.logging.SimpleFormatter;
 //Реализовать простой калькулятор (+ - / *)
 public class Task4 {
     public static void main(String[] args) throws IOException {
-        Logger lg = Logger.getLogger(Task1.class.getName());
+        Logger lg = Logger.getLogger(Task4.class.getName());
         String logPath = "log.txt";
         FileHandler fh = new FileHandler(logPath,false);
         lg.addHandler(fh);
