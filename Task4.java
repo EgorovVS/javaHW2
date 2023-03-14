@@ -46,18 +46,5 @@ public class Task4 {
         } else {
             System.out.println(answer);
         }
-//        System.out.println(answer % 1 == 0 ? (int)answer : (answer));
     }
-    public static void log(int a, int b, String operand, double answer) throws IOException {
-        FileWriter fw = new FileWriter("CalcLog.txt", true);
-
-        try{
-            fw.write(String.format(LocalDateTime.now()+"%d %s %d = %s"+"\n", a,operand,b,answer));
-            fw.flush();
-        }
-        catch(Exception ex){
-            System.out.println("Ooops");
-        }
-    }
-
 }
